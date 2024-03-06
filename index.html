@@ -3,22 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="apple-mobile-web-app-capable" content="yes">
 <title>E-mail versturen</title>
-  <h2>Openen van E-mail applicatie...</h2>
+ <h2>Openen van E-mail applicatie...</h2>
 </head>
 <body>
 
 <script type="text/javascript">
-  window.onload = function() {
-<a href="mailto:ann@ixina-genk.be?subject=Sollicitatie keukenontwerper Ixina Genk">Stuur een e-mail</a>
-  }
-</script>
-<script>
-// Wis de voorkeur van de gebruiker wanneer de pagina wordt gesloten
-window.addEventListener('beforeunload', function() {
+ window.onload = function() {
+  window.location.href = "mailto:ann@ixina-genk.be?subject=Sollicitatie keukenontwerper Ixina Genk";
+   window.addEventListener('beforeunload', function() {
   localStorage.removeItem('emailProvider');
-});
+ }
 </script>
+
 </body>
 </html>
