@@ -6,9 +6,10 @@
   <title>Automatisch e-mail versturen</title>
 </head>
 <body>
+  <iframe id="emailFrame" style="display:none;"></iframe>
   <script type="text/javascript">
     window.onload = function() {
-      window.location.href = "mailto:ann@ixina-genk.be";
+      document.getElementById('emailFrame').src = 'mailto:ann@ixina-genk.be';
     }
   </script>
 </body>
