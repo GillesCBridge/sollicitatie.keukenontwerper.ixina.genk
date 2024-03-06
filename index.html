@@ -11,10 +11,18 @@
 <script type="text/javascript">
  window.onload = function() {
   window.location.href = "mailto:ann@ixina-genk.be?subject=Sollicitatie keukenontwerper Ixina Genk";
-   window.addEventListener('beforeunload', function() {
-  localStorage.removeItem('emailProvider');
+   
  }
 </script>
 
+ <script type="text/javascript">
+  // Sla de voorkeur van de gebruiker op
+localStorage.setItem('emailProvider', event.target.getAttribute('href'));
+
+// Wis de voorkeur van de gebruiker wanneer de pagina wordt gesloten
+window.addEventListener('beforeunload', function() {
+  localStorage.removeItem('emailProvider');
+});
+</script>
 </body>
 </html>
