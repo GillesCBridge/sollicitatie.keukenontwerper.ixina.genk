@@ -7,17 +7,13 @@
 </head>
 <body>
 
+<h2>Openen van E-mail applicatie...</h2>
+<button onclick="openMailApp()">Open E-mail Applicatie</button>
+
 <script type="text/javascript">
-if (localStorage.getItem('openEmailApp') === null) {
-  // De gebruiker heeft de keuze nog niet gemaakt
+ function openMailApp() {
   window.location.href = "mailto:ann@ixina-genk.be?subject=Sollicitatie keukenontwerper Ixina Genk";
-  localStorage.setItem('openEmailApp', 'true');
-} else {
-  // De gebruiker heeft al gekozen
-  // Doe hier iets anders, zoals de gebruiker naar een andere pagina leiden
-  alert("U heeft al gekozen om de e-mailapplicatie te openen. Klik op OK om door te gaan.");
-  window.location.href = "https://www.ixina.be/nl/genk";
-}
+ }
 </script>
 
 </body>
