@@ -1,1 +1,21 @@
-phpCopy code<a href="mailto:ann@ixina-genk.be" target="_blank">CV doorsturen</a> 
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stuur je CV naar Ixina Genk</title>
+</head>
+<body>
+  <h1>Stuur je CV naar Ixina Genk</h1>
+  <p>
+    We zijn altijd op zoek naar getalenteerde mensen om ons team te versterken. Ben je enthousiast over de keukenbranche en heb je een passie voor klantenservice? Stuur dan je CV naar ons op!
+  </p>
+  <a href="mailto:ann@ixina-genk.be" onclick="this.href='mailto:ann@ixina-genk.be?subject=Sollicitatie&body=Beste%20Ann,%0A%0AIk%20stuur%20je%20graag%20mijn%20CV%20toe%20voor%20de%20openstaande%20vacature%20van%20%5BVACATURE NAAM%5D.%0A%0A%0A%20Met%20vriendelijke%20groeten,%0A%0A%5BJE NAAM%5D'">Stuur je CV met één klik!</a>
+
+  <script>
+    document.querySelector('a').addEventListener('click', function() {
+      this.href = 'mailto:ann@ixina-genk.be?subject=Sollicitatie&body=Beste%20Ann,%0A%0AIk%20stuur%20je%20graag%20mijn%20CV%20toe%20voor%20de%20openstaande%20vacature%20van%20%5BVACATURE NAAM%5D.%0A%0A%0A%20Met%20vriendelijke%20groeten,%0A%0A%5BJE NAAM%5D';
+    });
+  </script>
+</body>
+</html>
