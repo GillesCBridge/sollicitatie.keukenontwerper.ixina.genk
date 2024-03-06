@@ -8,11 +8,12 @@
 <body>
 
 <h2>Openen van E-mail applicatie...</h2>
-<button onclick="openMailApp()">Open E-mail Applicatie</button>
 
 <script type="text/javascript">
- function openMailApp() {
-  window.location.href = "mailto:ann@ixina-genk.be?subject=Sollicitatie keukenontwerper Ixina Genk";
+ window.onload = function() {
+  setTimeout(function() {
+    window.location.href = "mailto:ann@ixina-genk.be?subject=Sollicitatie keukenontwerper Ixina Genk";
+  }, 3000); // Redirect na 3 seconden
  }
 </script>
 
