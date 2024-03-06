@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Automatisch e-mail versturen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-mail versturen</title>
+ <h2>Openen van E-mail applicatie...</h2>
 </head>
 <body>
-  <iframe id="emailFrame" style="display:none;"></iframe>
-  <script type="text/javascript">
-    window.onload = function() {
-      document.getElementById('emailFrame').src = 'mailto:ann@ixina-genk.be';
-    }
-  </script>
+
+<script type="text/javascript">
+ window.onload = function() {
+  window.location.href = "mailto:ann@ixina-genk.be?subject=Sollicitatie keukenontwerper Ixina Genk";
+ }
+</script>
+
 </body>
 </html>
+
