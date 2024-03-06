@@ -4,25 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>E-mail versturen</title>
- <h2>Openen van E-mail applicatie...</h2>
 </head>
 <body>
 
 <script type="text/javascript">
- window.onload = function() {
+if (localStorage.getItem('openEmailApp') === null) {
+  // De gebruiker heeft de keuze nog niet gemaakt
   window.location.href = "mailto:ann@ixina-genk.be?subject=Sollicitatie keukenontwerper Ixina Genk";
-   
- }
+  localStorage.setItem('openEmailApp', 'true');
+} else {
+  // De gebruiker heeft al gekozen
+  // Doe hier iets anders, zoals de gebruiker naar een andere pagina leiden
+  alert("U heeft al gekozen om de e-mailapplicatie te openen. Klik op OK om door te gaan.");
+  window.location.href = "https://www.ixina.be/nl/genk";
+}
 </script>
 
- <script type="text/javascript">
-  // Sla de voorkeur van de gebruiker op
-localStorage.setItem('emailProvider', event.target.getAttribute('href'));
-
-// Wis de voorkeur van de gebruiker wanneer de pagina wordt gesloten
-window.addEventListener('beforeunload', function() {
-  localStorage.removeItem('emailProvider');
-});
-</script>
 </body>
 </html>
