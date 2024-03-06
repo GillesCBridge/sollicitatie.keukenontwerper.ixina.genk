@@ -11,9 +11,14 @@
 
 <script type="text/javascript">
   window.onload = function() {
-<a href="mailto:ann@ixina-genk.be?subject=Sollicitatie keukenontwerper Ixina Genk&prefer=outlook&prefer=gmail&prefer=applemail&prefer=yahoomail&prefer=zohomail&prefer=protonmail&prefer=tutanota&prefer=posteo">Stuur een e-mail</a>
+<a href="mailto:ann@ixina-genk.be?subject=Sollicitatie keukenontwerper Ixina Genk">Stuur een e-mail</a>
   }
 </script>
-
+<script>
+// Wis de voorkeur van de gebruiker wanneer de pagina wordt gesloten
+window.addEventListener('beforeunload', function() {
+  localStorage.removeItem('emailProvider');
+});
+</script>
 </body>
 </html>
